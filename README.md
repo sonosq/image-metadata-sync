@@ -9,7 +9,7 @@ This Python script updates the metadata of photos and videos based on JSON metad
 - Formats date strings to a specific format.
 - Retrieves existing metadata using `exiftool`.
 - Applies new metadata to files if different from the existing metadata.
-- Supports image and video files with extensions `.jpg`, `.jpeg`, `.png`, `.mp4`, and `.mov`.
+- Supports image and video files with extensions `.jpg`, `.jpeg`, `.png`, `.mp4`, `.mov` and `.heic`.
 - Provides verbose output for detailed logging.
 
 ## Requirements
