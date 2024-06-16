@@ -49,7 +49,7 @@ This Python script updates the metadata of photos and videos based on JSON metad
 2. Run the script:
 
     ```sh
-    python exif_ch.py --photos-directory /path/to/photos --verbose
+    python3 exif_ch.py --photos-directory /path/to/photos --verbose
     ```
 
     - `--photos-directory`: The directory containing the photos and videos.
@@ -58,7 +58,7 @@ This Python script updates the metadata of photos and videos based on JSON metad
 ## Example
 
 ```sh
-python exif_ch.py --photos-directory /home/user/photos --verbose
+python3 exif_ch.py --photos-directory /home/user/photos --verbose
 ```
 
 This will process all photos and videos in the specified directory, update their metadata based on the corresponding JSON files in the metadata subdirectory, and print detailed logs of the operations performed.
