@@ -22,14 +22,14 @@ This Python script updates the metadata of photos and videos based on JSON metad
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/sonosq/image-metadata-sync.git
+    cd image-metadata-sync
     ```
 
 2. Install the required dependencies:
 
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 3. Ensure `exiftool` is installed:
@@ -49,7 +49,7 @@ This Python script updates the metadata of photos and videos based on JSON metad
 2. Run the script:
 
     ```sh
-    python script.py --photos-directory /path/to/photos --verbose
+    python exif_ch.py --photos-directory /path/to/photos --verbose
     ```
 
     - `--photos-directory`: The directory containing the photos and videos.
@@ -58,7 +58,7 @@ This Python script updates the metadata of photos and videos based on JSON metad
 ## Example
 
 ```sh
-python script.py --photos-directory /home/user/photos --verbose
+python exif_ch.py --photos-directory /home/user/photos --verbose
 ```
 
 This will process all photos and videos in the specified directory, update their metadata based on the corresponding JSON files in the metadata subdirectory, and print detailed logs of the operations performed.
