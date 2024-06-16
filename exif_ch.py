@@ -72,7 +72,7 @@ def is_metadata_different(existing_metadata, new_metadata):
     )
 
 def is_valid_image(file_path):
-    valid_extensions = ['.jpg', '.jpeg', '.png', '.mp4', '.mov']
+    valid_extensions = ['.jpg', '.jpeg', '.png', '.mp4', '.mov', '.heic']
     return any(file_path.lower().endswith(ext) for ext in valid_extensions)
 
 def process_files(photos_directory, metadata_directory, verbose=False):
