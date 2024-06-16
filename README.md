@@ -1,15 +1,71 @@
 # image-metadata-sync
-image-metadata-sync is a Python script designed to efficiently match and align metadata from images. This tool is for anyone working with large collections of images where accurate metadata association is crucial.
 
-Features
+This Python script updates the metadata of photos and videos based on JSON metadata files. It ensures that file extensions are lowercase and applies metadata such as title, creation date, modification date, and GPS coordinates.
 
-	•	Extract metadata from a variety of image formats.
-	•	Match and align metadata across different sets of images.
-	•	Support for batch processing of large image collections.
-	•	User-friendly interface with clear logging and error handling.
-	•	Easily customizable for specific metadata matching needs.
+## Features
 
- Requirements
+- Converts file extensions to lowercase.
+- Reads metadata from JSON files.
+- Formats date strings to a specific format.
+- Retrieves existing metadata using `exiftool`.
+- Applies new metadata to files if different from the existing metadata.
+- Supports image and video files with extensions `.jpg`, `.jpeg`, `.png`, `.mp4`, and `.mov`.
+- Provides verbose output for detailed logging.
 
-	•	Python 3.6+
-	•	Required libraries: os, json, subprocess, datetime, argparse
+## Requirements
+
+- Python 3.x
+- `exiftool` installed and available in the system PATH.
+
+## Installation
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/your-username/your-repository.git
+    cd your-repository
+    ```
+
+2. Install the required dependencies:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Ensure `exiftool` is installed:
+
+    ```sh
+    sudo apt-get install exiftool  # For Debian-based systems
+    # or
+    brew install exiftool  # For macOS
+    ```
+
+## Usage
+
+1. Prepare your photos and metadata files:
+    - Place your photos and videos in a directory.
+    - Ensure each photo or video has a corresponding JSON metadata file in a subdirectory named `metadata`.
+
+2. Run the script:
+
+    ```sh
+    python script.py --photos-directory /path/to/photos --verbose
+    ```
+
+    - `--photos-directory`: The directory containing the photos and videos.
+    - `--verbose`: Enable verbose output (optional).
+
+## Example
+
+```sh
+python script.py --photos-directory /home/user/photos --verbose
+```
+
+This will process all photos and videos in the specified directory, update their metadata based on the corresponding JSON files in the metadata subdirectory, and print detailed logs of the operations performed.
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+
