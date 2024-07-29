@@ -3,13 +3,11 @@
 This Python script updates the metadata of photos and videos based on JSON metadata files. It ensures that file extensions are lowercase and applies metadata such as title, creation date, modification date, and GPS coordinates.
 
 ## Features
-
-- Converts file extensions to lowercase.
 - Reads metadata from JSON files.
 - Formats date strings to a specific format.
 - Retrieves existing metadata using `exiftool`.
 - Applies new metadata to files if different from the existing metadata.
-- Supports image and video files with extensions `.jpg`, `.jpeg`, `.png`, `.mp4`, `.mov` and `.heic`.
+- Supports image and video files with extensions `.jpg`, `.jpeg`, `.png`, `.mp4`, `.mov` .
 - Provides verbose output for detailed logging.
 
 ## Requirements
